@@ -1,0 +1,54 @@
+
+body {
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+  h1 {
+  display: block;
+  font-weight: 100;
+  font-size: 3em;
+  text-align: center;
+  margin: 25px 0;
+}
+
+form {
+  text-align: center;
+}
+
+input[type="text"] {
+  font-size: .8em;
+  width: 60%;
+  margin: 25px auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  text-align: center;
+}
+  .button {
+  display: inline-block;
+  padding: 20px;
+  background: black;
+  cursor: pointer;
+  color: white;
+}
+
+
+.name{
+  position: relative;
+  margin: 5vh auto;
+  text-align: left;
+  width:320px;
+}
+
+.name p{
+  margin-top: 1vh;
+  margin-left: 2vh;
+}
+
+.nameText{
+  font-size: .8em;
+}
