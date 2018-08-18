@@ -7,6 +7,39 @@ body {
 }
 
 
+.pokedex{
+  display: block;
+  max-width: 60vw;
+  height: 80vh;
+  background: red;
+  margin: 2em auto;
+  overflow: auto;
+  overflow: hidden;
+  position: relative;
+  border: 10px solid darkred;
+  border-radius: 10px;
+}
+
+.kaderLinks{
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 30vw;
+  background-color: red;
+
+}
+
+
+
+.kaderRechts{
+  display: inline-block;
+  position: absolute;
+  width: 30vw;
+  height: 100%;
+  left: 50%;
+
+}
+
   h1 {
   display: block;
   font-weight: 100;
@@ -35,6 +68,7 @@ input[type="text"] {
   background: black;
   cursor: pointer;
   color: white;
+
 }
 
 
@@ -45,11 +79,100 @@ input[type="text"] {
   width:320px;
 }
 
-.pokeInfo p{
+.kaderRechts p{
   margin-top: 1vh;
   margin-left: 2vh;
 }
 
-.nameText, .descriptionText, .heightText, .weightText, .typesText{
+
+
+.description{
+  display: inline-block;
+  position: absolute;
+  top:6vh;
+  left:3vw;
+  height: 40vh;
+  text-align: left;
+  width:22vw;
+  font-size: 1.2em;
+  z-index:1;
+  background-color: green;
+}
+
+.description p{
+  margin-top: 1vh;
+  margin-left: 2vh;
+}
+
+.height{
+  display: inline-block;
+  position: absolute;
+  top:48vh;
+  left:3vw;
+  height: 12vh;
+  text-align: left;
+  width:10vw;
+  font-size: 4vh;
+  z-index:1;
+  background-color: green;
+}
+
+.height p{
+  margin-top: 1vh;
+  margin-left: 2vh;
+}
+
+.weight{
+  display: inline-block;
+  position: absolute;
+  top: 48vh;
+  left: 13vw;
+  margin-left: 2vw;
+  height: 12vh;
+  text-align: left;
+  width: 10vw;
+  font-size: 4vh;
+  z-index:1;
+  background-color: green;
+}
+
+.weight p{
+  margin-top: 1vh;
+  margin-left: 2vh;
+}
+
+.types{
+  display: inline-block;
+  position: absolute;
+  top:62vh;
+  left:3vw;
+  height: 12vh;
+  text-align: left;
+  width:22vw;
+  font-size: 4vh;
+  z-index:1;
+  background-color: green;
+}
+
+.types p{
+  margin-top: 1vh;
+  margin-left: 2vh;
+}
+
+
+ .descriptionText, .heightText, .weightText, .typesText{
   font-size: .8em;
+  border-top: 1px solid black;
+  padding-top: 5px;
+}
+
+.nameText{
+  text-align: center;
+  font-size: 2em;
+}
+
+.descriptionText{
+  padding-right: 5px;
+  height: 33vh;
+  overflow-y: scroll;
 }

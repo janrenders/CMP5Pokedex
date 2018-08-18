@@ -16,10 +16,7 @@ $(function(){
       defaultPokemonData = data;
 
 
-      // $('.pokedex h3').text(defaultPokemonData.name.toUpperCase())
-
-  /*    $('.poke-img img').attr('src', defaultPokemonData.sprites.front_default)
-      console.log(data)*/
+  
     });
 
     defaultPokemonData.fail(function( jqXHR, textStatus, error) {
@@ -37,6 +34,7 @@ $(function(){
 
 
 
+
   $('.button').on('click', function(){
 
     pokemonSearch = $('input[type="text"]').val()
@@ -46,6 +44,24 @@ $(function(){
       method: "GET",
       dataType:"json",
     });
+
+
+    function randomNumber() {
+    return Math.floor((Math.random() * 150) + 1);
+    }
+
+      if (pokemonSearch > 151) {
+        alert( "First gen only, here's a random pokemon");
+
+        var request = $.ajax({
+          type: "GET",
+          url: "https://pokeapi.co/api/v2/pokemon/" + randomNumber(),
+          success: function(data){
+              $("#zoeken").val(data.id);
+           }
+        })
+
+      };
 
 
     request.done(function( data ) {
