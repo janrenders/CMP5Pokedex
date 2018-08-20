@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+
+body {
+  font-family: sans-serif;
+  background: url("../images/background.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.pokedex{
+  display: block;
+  max-width: 60vw;
+  height: 80vh;
+  background: RGB(220, 0, 0);
+  margin: 2em auto;
+  overflow: auto;
+  overflow: hidden;
+  position: relative;
+  border: 10px solid RGB(139, 0, 0);
+  border-radius: 10px;
+}
+
+.kaderLinks{
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 30vw;
+  border-right: 3px solid darkred;
+}
+
+.dotGroot{
+  height: 55px;
+  width: 55px;
+  border: 3px solid RGB(220, 220, 220);
+  border-radius: 50%;
+  display: inline-block;
+  margin: .8vw;
+  background: radial-gradient(circle at 15px 15px, #5cabff, #000);
+}
+
+ .dotRood, .dotGeel, .dotGroen {
+  position: relative;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  top: -50px;
+  margin-left: 1vw;
+  border: 0.3px solid black;
+  -moz-box-shadow:    inset 0 0 1px 1px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.5);
+  box-shadow:         inset 0 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.dotRood{
+  background-color: RGB(139, 0, 0);
+  margin-left: 0;
+}
+
+.dotGeel{
+  background-color: yellow;
+}
+
+.dotGroen{
+  background-color: RGB(50, 185, 50);
+}
+
+.dots{
+  width: 100%;
+  border-bottom: 2px solid darkred;
+}
+
+.kaderRechts{
+  display: inline-block;
+  position: absolute;
+  width: 30vw;
+  height: 100%;
+  left: 50%;
+}
+
+  h1 {
+  display: block;
+  font-weight: 100;
+  font-size: 3em;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.pokeAfb {
+  width: 20vw;
+  height: 32vh;
+  border: 15px solid RGB(220, 220, 220);
+  display: block;
+  margin: 6vh auto 0 auto;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.pokeAfb img{
+  width: 11vw;
+  height: 20vh;
+  display: block;
+  position: relative;
+  margin: 4.8vh auto 0 auto;
+}
+
+
+form {
+  text-align: center;
+}
+
+input[type="text"] {
+  font-size: .8em;
+  width: 60%;
+  margin: 25px auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  text-align: center;
+}
+
+  .button {
+  display: inline-block;
+  padding: 20px;
+  background: black;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(47, 79, 79);
+  border-radius: 5px;
+  border: 4px solid rgb(20,20,20);
+}
+
+.name{
+  position: relative;
+  margin: 5vh auto;
+  text-align: left;
+  width: 320px;
+}
+
+.kaderRechts p{
+  margin-top: 1vh;
+  margin-left: 2vh;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.description{
+  display: inline-block;
+  position: absolute;
+  top:6vh;
+  left:4vw;
+  height: 40vh;
+  text-align: left;
+  width:22vw;
+  z-index:1;
+  font-size: .7em;
+  background-color: RGB(50, 185, 50);
+  -moz-box-shadow:    inset 0 0 2px 2px rgba(0,0,0,0.7);
+  -webkit-box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.7);
+  box-shadow:         inset 0 0 2px 2px rgba(0,0,0,0.7);
+}
+
+.description p{
+  margin-top: 1vh;
+  margin-left: 2vh;
+}
+
+.height{
+  display: inline-block;
+  position: absolute;
+  top:48vh;
+  left:4vw;
+  height: 12vh;
+  text-align: left;
+  width:10vw;
+  z-index:1;
+  font-size: .7em;
+  background-color: RGB(50, 185, 50);
+}
+
+.height p{
+  margin-top: 1vh;
+  margin-left: 2vh;
+}
+
+.weight{
+  display: inline-block;
+  position: absolute;
+  top: 48vh;
+  left: 14vw;
+  margin-left: 2vw;
+  height: 12vh;
+  text-align: left;
+  width: 10vw;
+  z-index:1;
+  font-size: .7em;
+  background-color: RGB(50, 185, 50);
+}
+
+.weight p{
+  margin-top: 1vh;
+  margin-left: 2vh;
+}
+
+.types{
+  display: inline-block;
+  position: absolute;
+  top:62vh;
+  left:4vw;
+  height: 12vh;
+  text-align: left;
+  width:22vw;
+  z-index:1;
+  font-size: .7em;
+  background-color: RGB(50, 185, 50);
+}
+
+.types p{
+  margin-top: 1vh;
+  margin-left: 2vh;
+}
+
+.description, .height, .weight, .types{
+  -moz-box-shadow:    inset 0 0 2px 2px rgba(0,0,0,0.7);
+  -webkit-box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.7);
+  box-shadow:         inset 0 0 2px 2px rgba(0,0,0,0.7);
+}
+
+
+ .descriptionText, .heightText, .weightText, .typesText{
+  border-top: 1.5px solid darkgreen;
+  padding-top: 5px;
+  font-size: 1.2em;
+}
+
+ .descriptionText p{
+line-height: 20px;
+}
+
+.nameText{
+  text-align: center;
+}
+
+.descriptionText{
+  padding-right: 5px;
+  height: 33vh;
+  overflow-y: scroll;
+}

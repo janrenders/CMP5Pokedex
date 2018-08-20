@@ -5,7 +5,7 @@ $(function(){
   var initFunc = function() {
 
     defaultPokemonData = $.ajax({
-      url: "https://pokeapi.co/api/v2/pokemon/?limit=151",
+      url: "https://pokeapi.co/api/v2/pokemon/",
       method: "GET",
       dataType:"json",
     });
@@ -16,7 +16,7 @@ $(function(){
       defaultPokemonData = data;
 
 
-  
+
     });
 
     defaultPokemonData.fail(function( jqXHR, textStatus, error) {
@@ -89,8 +89,8 @@ $(function(){
 
 
             $('.pokedex h3').text(data.name.toUpperCase())
+            $('.pokeAfb img').attr('src', data.sprites.front_default)
 
-            $('.poke-img img').attr('src', data.sprites.front_default)
 
         console.log(data)
 
