@@ -14,6 +14,7 @@ body {
 
 .pokedex{
   display: block;
+  width: 30vw;
   max-width: 60vw;
   height: 80vh;
   background: RGB(220, 0, 0);
@@ -25,12 +26,17 @@ body {
   border-radius: 10px;
 }
 
+
+
 .kaderLinks{
   display: inline-block;
   position: absolute;
   height: 100%;
-  width: 30vw;
+  width: 100%;
   border-right: 3px solid darkred;
+
+  background-color: rgb(220, 0, 0);
+  z-index: 99999;
 }
 
 .dotGroot{
@@ -75,12 +81,22 @@ body {
   border-bottom: 2px solid darkred;
 }
 
+.kaderRechtsOpen{
+  display: inline-block;
+  position: absolute;
+  width: 30vw;
+  left: 30vw;
+  z-index: 45;
+  font-family: 'Press Start 2P', cursive;
+}
+
 .kaderRechts{
   display: inline-block;
   position: absolute;
   width: 30vw;
   height: 100%;
   left: 50%;
+  z-index: -33;
 }
 
   h1 {
@@ -96,7 +112,7 @@ body {
   height: 32vh;
   border: 15px solid RGB(220, 220, 220);
   display: block;
-  margin: 6vh auto 0 auto;
+  margin: 4vh auto 0 auto;
   background: #fff;
   border-radius: 5px;
 }
@@ -116,7 +132,8 @@ form {
 
 input[type="text"] {
   font-size: .8em;
-  width: 60%;
+  width: 20vw;
+  height: 5vh;
   margin: 25px auto;
   display: block;
   border-radius: 5px;
@@ -133,13 +150,25 @@ input[type="text"] {
   background-color: rgb(47, 79, 79);
   border-radius: 5px;
   border: 4px solid rgb(20,20,20);
+  height: 10vh;
+  position: absolute;
+  left: 4vw;
+  top: 61vh;
 }
 
 .name{
-  position: relative;
-  margin: 5vh auto;
-  text-align: left;
-  width: 320px;
+  display: inline-block;
+  position: absolute;
+  right: 4vw;
+  top: 61vh;
+  height: 10vh;
+  width: 10vw;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.name p{
+  margin-top: 1.3vh;
+  margin-left: 2vh;
 }
 
 .kaderRechts p{
@@ -151,17 +180,11 @@ input[type="text"] {
 .description{
   display: inline-block;
   position: absolute;
-  top:6vh;
+  top:4vh;
   left:4vw;
   height: 40vh;
-  text-align: left;
   width:22vw;
   z-index:1;
-  font-size: .7em;
-  background-color: RGB(50, 185, 50);
-  -moz-box-shadow:    inset 0 0 2px 2px rgba(0,0,0,0.7);
-  -webkit-box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.7);
-  box-shadow:         inset 0 0 2px 2px rgba(0,0,0,0.7);
 }
 
 .description p{
@@ -172,14 +195,11 @@ input[type="text"] {
 .height{
   display: inline-block;
   position: absolute;
-  top:48vh;
+  top:47vh;
   left:4vw;
-  height: 12vh;
-  text-align: left;
+  height: 10vh;
   width:10vw;
   z-index:1;
-  font-size: .7em;
-  background-color: RGB(50, 185, 50);
 }
 
 .height p{
@@ -190,15 +210,12 @@ input[type="text"] {
 .weight{
   display: inline-block;
   position: absolute;
-  top: 48vh;
+  top: 47vh;
   left: 14vw;
   margin-left: 2vw;
-  height: 12vh;
-  text-align: left;
+  height: 10vh;
   width: 10vw;
   z-index:1;
-  font-size: .7em;
-  background-color: RGB(50, 185, 50);
 }
 
 .weight p{
@@ -209,14 +226,11 @@ input[type="text"] {
 .types{
   display: inline-block;
   position: absolute;
-  top:62vh;
+  top:61vh;
   left:4vw;
-  height: 12vh;
-  text-align: left;
+  height: 10vh;
   width:22vw;
   z-index:1;
-  font-size: .7em;
-  background-color: RGB(50, 185, 50);
 }
 
 .types p{
@@ -224,25 +238,24 @@ input[type="text"] {
   margin-left: 2vh;
 }
 
-.description, .height, .weight, .types{
+.name, .description, .height, .weight, .types{
+  text-align: left;
+  font-size: .7em;
+  background-color: RGB(50, 185, 50);
   -moz-box-shadow:    inset 0 0 2px 2px rgba(0,0,0,0.7);
   -webkit-box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.7);
   box-shadow:         inset 0 0 2px 2px rgba(0,0,0,0.7);
 }
 
 
- .descriptionText, .heightText, .weightText, .typesText{
+ .descriptionText, .heightText, .weightText, .typesText, .nameText{
   border-top: 1.5px solid darkgreen;
   padding-top: 5px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
  .descriptionText p{
 line-height: 20px;
-}
-
-.nameText{
-  text-align: center;
 }
 
 .descriptionText{

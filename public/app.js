@@ -4,6 +4,8 @@ $(function(){
 
   var initFunc = function() {
 
+
+
     defaultPokemonData = $.ajax({
       url: "https://pokeapi.co/api/v2/pokemon/",
       method: "GET",
@@ -36,6 +38,19 @@ $(function(){
 
 
   $('.button').on('click', function(){
+
+
+
+    $(".kaderRechts").removeClass('kaderRechts');
+    $(".kaderRechts").addClass('kaderRechtsOpen');
+    $(".kaderLinks").animate({"width": "30vw"});
+    $(".pokedex").animate({"width": "65vw"});
+
+
+
+//  $('.linksOpen').css("transform","translate(-30vw,0px)");
+
+
 
     pokemonSearch = $('input[type="text"]').val()
 
